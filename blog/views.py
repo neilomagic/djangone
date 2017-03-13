@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("<h2>Hey!</h2>")
+    return render(request, 'blog/post_list.html', {})
 
 
